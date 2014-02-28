@@ -98,7 +98,7 @@ describe('The Twilio REST Client constructor', function () {
         });
     });
 
-    it('should allow for timeout configuration and handle responses faster than the timeout', function (done) {
+    it('should allow for timeout configuration and handle responses slower than the timeout', function (done) {
         slowClient.request({ 
             url:'?sleep=3&', // sleep for 3 seconds
             method:'GET'
